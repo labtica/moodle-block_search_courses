@@ -15,9 +15,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_search_course', language 'en'
+ * Strings for component 'block_search_courses', language 'en'
  * 
- * @package		block_search_course
+ * @package		block_search_courses
  * @copyright	2021 Escuela Didáctica <soporte@escueladidactica.com>
  * @license		http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -37,3 +37,7 @@ $string['enrolled_only'] = 'Enrolled courses only';
 $string['enrolled_only:desc'] = 'Show only enrolled courses (for non-administrator users).';
 $string['can_enrol'] = 'Only courses with automatic enrollment';
 $string['can_enrol:desc'] = 'Show only courses with automatic enrollment enabled (for non-administrator users).';
+
+//Access
+$string['search_course:addinstance'] = 'Agregar una instancia del bloque de búsqueda de cursos';
+$string['search_course:myaddinstance'] = 'Agregar una instancia del bloque de búsqueda de cursos en el Área personal';
