@@ -53,8 +53,8 @@ class block_search_courses extends block_base {
 	 * @return stdClass|null Course content or null if not available.
 	 */
     public function get_content() {
-		global $CFG;
-    	$content = "<p>No se pudo cargar el contenido</p>";
+
+		$content = "<p>". get_string('content_error', 'block_search_course') ."</p>";
 
 	    if ($this->content !== null) {
 	      return $this->content;
@@ -75,6 +75,7 @@ class block_search_courses extends block_base {
 		    $this->content         = new stdClass;
 			$this->content->text   = $content;
 		}
+
 	    return $this->content;
 	}
 

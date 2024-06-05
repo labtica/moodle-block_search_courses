@@ -1,27 +1,29 @@
 <form>
-<select id="id_search_course" data-placeholder="Lista de cursos" class="js-chosen-courses" tabindex="5">
-    <option value=""></option>
-    {{#courses_maplist}}
-        <optgroup label="{{ category }}">
-        {{#courses}}
-            <option value="{{id}}">{{fullname}}</option>
-        {{/courses}}
-        </optgroup>
-    {{/courses_maplist}}
-</select>
-<div class="searchBtn__container">
-    <a href="" class="js-btn-link-course btn-link-course btn btn-secondary d-none">{{btn_search}}
-    </a>
-</div>
+    <select id="id_search_course" data-placeholder="{{#str}}course_list,block_search_course{{/str}}" class="js-chosen-courses" tabindex="5">
+        <option value=""></option>
+        {{#courses_maplist}}
+            <optgroup label="{{ category }}">
+            {{#courses}}
+                <option value="{{id}}">{{fullname}}</option>
+            {{/courses}}
+            </optgroup>
+        {{/courses_maplist}}
+    </select>
+    <div class="searchBtn__container">
+        <a href="" class="js-btn-link-course btn-link-course btn btn-secondary d-none">
+            {{btn_search}}
+        </a>
+    </div>
 </form>
+
 {{#js}}
-require(['jquery','block_search_courses/selected','block_search_courses/choisen'], function($,selected){
+require(['jquery','block_search_course/selected','block_search_course/choisen'], function($,selected){
     selected = selected.init();
     $(".js-chosen-courses")
         .chosen({
-            no_results_text: 'Resultado no encontrado! '
+            no_results_text: '{{#str}}no_results_text, block_search_course{{/str}}'
         })
         .change(selected.eventOnChangeSelect)
 });
 {{/js}}
-{{>block_search_courses/choisen/styles}}
+{{>block_search_course/choisen/styles}}
