@@ -1,18 +1,18 @@
 <?php
-// This code belongs to Escuela Didactica <https://escueladidactica.com>.
-
-// We build transformation processes for companies where their collaborators 
-// are trained with the employees are trained with the knowledge of your 
-// company through digital through digital educational experiences.
+// This file is part of Moodle - http://moodle.org/
 //
-
-/**
- * This file contains block_search_courses_edit_form  class for search_course
- * 
- * @package		block_search_courses
- * @copyright	2021 Escuela Didáctica <soporte@escueladidactica.com>
- * @license		http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
  * Class block_search_courses_edit_form
