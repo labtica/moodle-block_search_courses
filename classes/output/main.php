@@ -61,7 +61,7 @@ class main implements renderable, templatable {
     public function export_for_template(renderer_base $output) {
         global $CFG, $DB;
 
-        $courses = search_course_list();
+        $courses = block_search_course_list();
 
         if (!is_siteadmin()) {
             if (get_config('block_search_courses', 'enrolled_only')) {
@@ -85,7 +85,7 @@ class main implements renderable, templatable {
             }
         }
         
-        $courses = search_course_format_for_template($courses);
+        $courses = block_search_course_format_for_template($courses);
         $data = [
             'courses_maplist' => $courses,
             'wwwroot' => $CFG->wwwroot,
